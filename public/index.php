@@ -1,8 +1,8 @@
 <?php
-// public/index.php
+define('BASE_PATH', dirname(__DIR__));
 
-// Incluir header (protege sesión)
-include '../views/header.php';
+require_once(BASE_PATH . '/config/conexion.php');
+require_once(BASE_PATH . '/views/header.php');
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,6 @@ include '../views/header.php';
 
     <main class="main-container">
 
-        <!-- Bienvenida -->
         <div class="bienvenida">
 
             <h1>Panel Principal</h1>
@@ -31,23 +30,17 @@ include '../views/header.php';
             <p>
                 Bienvenido,
                 <strong>
-                    <?php echo htmlspecialchars($_SESSION['nombre']); ?>
+                    <?php echo htmlspecialchars($_SESSION['nombre'] ?? 'Usuario'); ?>
                 </strong>
             </p>
 
         </div>
 
-        <!-- Tarjetas -->
         <section class="stats-container">
 
             <div class="card">
-
                 <h2>Resumen de Operaciones</h2>
-
-                <p>
-                    Seleccione un módulo en el menú superior para comenzar.
-                </p>
-
+                <p>Seleccione un módulo en el menú superior para comenzar.</p>
             </div>
 
         </section>
