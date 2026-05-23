@@ -22,6 +22,9 @@ require_once(BASE_PATH . '/config/conexion.php');
 
 <body>
 
+<!-- HEADER SIEMPRE DENTRO DEL BODY -->
+<?php include BASE_PATH . '/views/header.php'; ?>
+
 <main class="main-container">
 
     <div class="bienvenida">
