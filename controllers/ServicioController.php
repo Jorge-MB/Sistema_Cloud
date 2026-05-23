@@ -1,6 +1,6 @@
 <?php
 // controllers/ServicioController.php
-
+session_start();
 require_once(__DIR__ . '/../config/conexion.php');
 require_once(__DIR__ . '/../models/ServicioDao.php');
 
@@ -9,7 +9,7 @@ require_once(__DIR__ . '/../models/ServicioDao.php');
 // ==========================================
 if (!isset($_SESSION['usuario_id'])) {
 
-    header("Location: ../views/login.php");
+    header("Location: ../public/login.php");
     exit();
 }
 

@@ -1,6 +1,6 @@
 <?php
 // controllers/EmpleadoController.php
-
+session_start();
 // ==========================================
 // IMPORTAMOS ARCHIVOS NECESARIOS
 // ==========================================
@@ -13,7 +13,7 @@ require_once(__DIR__ . '/../models/EmpleadoDao.php');
 // ==========================================
 if (!isset($_SESSION['usuario_id'])) {
 
-    header("Location: ../views/login.php");
+    header("Location: ../public/login.php");
     exit();
 }
 
