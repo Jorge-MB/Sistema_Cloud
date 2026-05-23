@@ -11,7 +11,7 @@ $host = 'kodama.proxy.rlwy.net';
 $port = 18451;
 $db   = 'railway';
 $user = 'root';
-$pass = 'TU_PASSWORD_AQUI';
+$pass = 'uifDpTkZuDiGfVLFakDmgxhWmYGyxLjB';
 
 try {
 
