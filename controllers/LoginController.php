@@ -1,8 +1,8 @@
 <?php
 // Controllers/LoginController.php
 
-require_once '../config/conexion.php';
-require_once '../models/UsuarioDao.php';
+require_once(__DIR__ . '/../config/conexion.php');
+require_once(__DIR__ . '/../models/UsuarioDao.php');
 
 // Si viene del formulario
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

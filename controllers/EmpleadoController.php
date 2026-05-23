@@ -4,8 +4,8 @@
 // ==========================================
 // IMPORTAMOS ARCHIVOS NECESARIOS
 // ==========================================
-require_once '../config/conexion.php';
-require_once '../models/EmpleadoDao.php';
+require_once(__DIR__ . '/../config/conexion.php');
+require_once(__DIR__ . '/../models/EmpleadoDao.php');
 
 // ==========================================
 // VALIDAR SESIÓN DEL USUARIO

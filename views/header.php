@@ -1,6 +1,6 @@
 <?php
 // El require_once DEBE ir primero para que las variables de sesión estén disponibles
-require_once '../config/conexion.php'; 
+require_once(__DIR__ . '/../config/conexion.php'); 
 
 // Validamos sesión: Si no existe, redirigimos al login
 if (!isset($_SESSION['usuario_id'])) {

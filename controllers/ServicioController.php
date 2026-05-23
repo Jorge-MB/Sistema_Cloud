@@ -1,8 +1,8 @@
 <?php
 // controllers/ServicioController.php
 
-require_once '../config/conexion.php';
-require_once '../models/ServicioDao.php';
+require_once(__DIR__ . '/../config/conexion.php');
+require_once(__DIR__ . '/../models/ServicioDao.php');
 
 // ==========================================
 // VALIDAR SESIÓN
