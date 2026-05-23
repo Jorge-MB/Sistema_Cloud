@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['nombre'])) {
+    header("Location: login.php");
+    exit();
+}
+
 define('BASE_PATH', dirname(__DIR__));
 
 require_once(BASE_PATH . '/config/conexion.php');
@@ -8,6 +13,7 @@ require_once(BASE_PATH . '/config/conexion.php');
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
@@ -16,18 +22,22 @@ require_once(BASE_PATH . '/config/conexion.php');
 
 <body>
 
-<main>
+<main class="main-container">
 
-    <h1>Panel Principal</h1>
+    <div class="bienvenida">
 
-    <p>
-        Bienvenido,
-        <strong>
-            <?php echo htmlspecialchars($_SESSION['nombre'] ?? 'Usuario'); ?>
-        </strong>
-    </p>
+        <h1>Panel Principal</h1>
 
-    <a href="logout.php">Cerrar sesión</a>
+        <p>
+            Bienvenido,
+            <strong>
+                <?= htmlspecialchars($_SESSION['nombre']) ?>
+            </strong>
+        </p>
+
+        <a href="logout.php">Cerrar sesión</a>
+
+    </div>
 
 </main>
 
