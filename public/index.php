@@ -1,51 +1,35 @@
 <?php
+session_start();
+
 define('BASE_PATH', dirname(__DIR__));
 
 require_once(BASE_PATH . '/config/conexion.php');
-require_once(BASE_PATH . '/views/header.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Dashboard - Sistema Cloud</title>
-
+    <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <main class="main-container">
+<main>
 
-        <div class="bienvenida">
+    <h1>Panel Principal</h1>
 
-            <h1>Panel Principal</h1>
+    <p>
+        Bienvenido,
+        <strong>
+            <?php echo htmlspecialchars($_SESSION['nombre'] ?? 'Usuario'); ?>
+        </strong>
+    </p>
 
-            <br>
+    <a href="logout.php">Cerrar sesión</a>
 
-            <p>
-                Bienvenido,
-                <strong>
-                    <?php echo htmlspecialchars($_SESSION['nombre'] ?? 'Usuario'); ?>
-                </strong>
-            </p>
-
-        </div>
-
-        <section class="stats-container">
-
-            <div class="card">
-                <h2>Resumen de Operaciones</h2>
-                <p>Seleccione un módulo en el menú superior para comenzar.</p>
-            </div>
-
-        </section>
-
-    </main>
+</main>
 
 </body>
 </html>
