@@ -21,7 +21,6 @@ require_once(BASE_PATH . '/config/conexion.php');
 </head>
 
 <body>
-
 <!-- HEADER SIEMPRE DENTRO DEL BODY -->
 <?php include BASE_PATH . '/views/header.php'; ?>
 
@@ -30,7 +29,6 @@ require_once(BASE_PATH . '/config/conexion.php');
     <div class="bienvenida">
 
         <h1>Panel Principal</h1>
-
         <p>
             Bienvenido,
             <strong>
