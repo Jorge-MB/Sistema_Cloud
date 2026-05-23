@@ -23,7 +23,7 @@ require_once(__DIR__ . '/../config/conexion.php');
                 <p style="color: red; font-weight: bold;"><?php echo $error; ?></p>
             <?php endif; ?>
 
-            <form action="../Controllers/LoginController.php" method="POST" class="formulario">
+            <form action="../controllers/LoginController.php" method="POST" class="formulario">
 
                 <div class="grupo">
                     <label for="usuario">Nombre de Usuario:</label>

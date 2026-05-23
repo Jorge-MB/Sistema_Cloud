@@ -31,7 +31,7 @@
 
             <h2>Registrar Nuevo Empleado</h2>
 
-            <form action="../Controllers/EmpleadoController.php"
+            <form action="../controllers/EmpleadoController.php"
                   method="POST"
                   class="formulario">
 
@@ -126,7 +126,7 @@
 
                                     |
 
-                                    <a href="../Controllers/EmpleadoController.php?action=eliminar&id=<?php echo $emp['dni']; ?>"
+                                    <a href="../controllers/EmpleadoController.php?action=eliminar&id=<?php echo $emp['dni']; ?>"
                                        class="eliminar"
                                        onclick="return confirm('¿Seguro que desea eliminar este empleado?')">
 
