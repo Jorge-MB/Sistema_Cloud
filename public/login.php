@@ -26,7 +26,7 @@ require_once(__DIR__ . '/../config/conexion.php');
         <?php endif; ?>
 
         <!-- IMPORTANTE: va a index.php -->
-        <form action="index.php" method="POST" class="formulario">
+        <form action="auth.php" method="POST" class="formulario">
 
             <div class="grupo">
                 <label>Usuario:</label>
