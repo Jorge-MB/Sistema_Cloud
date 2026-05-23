@@ -15,7 +15,7 @@
     <title>Nuestros Servicios</title>
 
     <link rel="stylesheet"
-          href="../public/Styles.css">
+          href="../public/styles.css">
 
 </head>
 

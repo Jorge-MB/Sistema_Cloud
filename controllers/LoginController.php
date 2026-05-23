@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['usuario_id'] = $datos_usuario['id'];
         $_SESSION['nombre'] = $datos_usuario['nombre_usuario'];
 
-        // 🔥 IMPORTANTE: ir al index limpio
+        // IMPORTANTE: ir al index limpio
         header("Location: /index.php");
         exit();
 

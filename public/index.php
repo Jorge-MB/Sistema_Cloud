@@ -14,7 +14,7 @@ require_once(BASE_PATH . '/views/header.php');
     
     <title>Dashboard - Sistema Cloud</title>
 
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>

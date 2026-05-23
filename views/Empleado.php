@@ -17,7 +17,7 @@
     <title>Módulo Empleados - UCV</title>
 
     <link rel="stylesheet"
-          href="../public/Styles.css">
+          href="../public/styles.css">
 </head>
 
 <body>
