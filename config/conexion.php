@@ -7,11 +7,11 @@
 // ===============================
 // DATOS RAILWAY MYSQL
 // ===============================
-$host = 'kodama.proxy.rlwy.net';
-$port = 18451;
+$host = 'caboose.proxy.rlwy.net';
+$port = 30592;
 $db   = 'railway';
 $user = 'root';
-$pass = 'uifDpTkZuDiGfVLFakDmgxhWmYGyxLjB';
+$pass = 'jhfOJHPImnmMCxrtHksLvKNhZjmIhUFX';
 
 try {
 
