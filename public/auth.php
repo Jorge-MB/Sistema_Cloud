@@ -1,9 +1,11 @@
 <?php
-//auth.php
+
 require_once(__DIR__ . '/../config/conexion.php');
 require_once(__DIR__ . '/../controllers/LoginController.php');
 
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 $controller = new LoginController($pdo);
 

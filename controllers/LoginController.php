@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 class LoginController {
 
     private $pdo;
@@ -18,6 +16,10 @@ class LoginController {
         $datos_usuario = $usuarioModel->buscarUsuario($user);
 
         if ($datos_usuario && password_verify($pass, $datos_usuario['password'])) {
+
+            if (session_status() === PHP_SESSION_NONE) {
+                session_start();
+            }
 
             $_SESSION['usuario_id'] = $datos_usuario['id'];
             $_SESSION['nombre'] = $datos_usuario['nombre_usuario'];
