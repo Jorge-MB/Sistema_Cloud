@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Validar sesión
 if (!isset($_SESSION['usuario_id'])) {
-    header("Location: /public/login.php");
+    header("Location: /login.php");
     exit();
 }
 ?>
@@ -18,8 +18,7 @@ if (!isset($_SESSION['usuario_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Gestión</title>
 
-    <!-- CSS CORRECTO -->
-    <link rel="stylesheet" href="/public/Styles.css">
+    <link rel="stylesheet" href="/Styles.css">
 </head>
 
 <body>
@@ -30,7 +29,7 @@ if (!isset($_SESSION['usuario_id'])) {
 
         <ul class="menu">
 
-            <li><a href="/public/index.php">Inicio</a></li>
+            <li><a href="/index.php">Inicio</a></li>
 
             <li><a href="/controllers/ServiciosController.php">Servicios</a></li>
 
